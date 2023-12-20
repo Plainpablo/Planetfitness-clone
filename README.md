@@ -1,7 +1,12 @@
-"# Planetfitness-clone" 
-"# Planetfitness-clone" 
 
-<div align='center'><img src='https://user-images.githubusercontent.com/105128267/224688338-8f1f28b7-029b-4ed7-a567-86de0c44ff42.png'/></div>
+
+
+  ![pf-header-logo](https://github.com/Plainpablo/Planetfitness-clone/assets/109858262/4a850089-70f6-4326-9dc9-5d760bd53a18)
+
+
+
+
+
 
 <h2>About the project</h2>
 
@@ -19,8 +24,9 @@ simple shopping experience that puts the focus on the products.</p>
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
-<div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/213868640-e3421f0a-bb10-4352-82a1-1bda4df821e9.png'/>
-</div>
+
+![planetfitness-screenshot-4-min](https://github.com/Plainpablo/Planetfitness-clone/assets/109858262/0469890c-229f-459e-b5dd-d9097093ebee)
+
+
 
 
