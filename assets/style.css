@@ -1,0 +1,1188 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+
+body {
+    height: 100vh;
+	
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+	position: relative;
+}
+
+.background-slide {
+	height: 78px;
+	width: 100vw;
+	background-color: #ffffff;
+	position: fixed;
+	transform: translateY(-100%);
+	transition: all .5s ease-in-out;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+	border-width: 2px;
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%); 
+	border-image-slice: 1;
+	border-bottom: 2px solid transparent;
+	z-index: 2;
+
+}
+
+.background-slide-2 {
+	display: none;
+	height: 78px;
+	width: 100vw;
+	background-color: #ffffff;
+	position: fixed;
+	transform: translateY(0%);
+	transition: all .3s ease-in-out;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+	border-width: 5px;
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%); 
+	border-image-slice: 1;
+	border-bottom: 5px solid transparent;
+	z-index: 2;
+}
+
+
+.header-content {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    padding-top: 0.3125rem;
+    margin-inline: auto;
+    width: calc(100vw - 3.75rem); /* 40px is the combined padding (20px on each side) */
+    box-sizing: border-box;
+	z-index: 3;
+}
+
+.logo {
+    max-width: 13.75rem;
+    max-height: 4.09rem;
+    z-index: 3;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    justify-content: space-between;
+    width: 62%;
+    
+}
+
+.social-container img {
+    width: 1.375rem ;
+    height: 1.375rem ;
+    padding-inline: 0.46875rem;
+    filter: invert(100%) sepia(4%) saturate(111%) hue-rotate(182deg) brightness(120%) contrast(100%);
+    transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.social-container img:hover {
+    filter: invert(82%) sepia(28%) saturate(5895%) hue-rotate(360deg) brightness(101%) contrast(106%);
+}
+
+.right-container p {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 3px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.free-trail:hover {
+	color: #fcb900;
+}
+
+.menu-container {
+    display: flex;
+	align-items: center;
+    cursor: pointer;
+}
+
+.menu {
+   margin-right: 0.9375rem;
+   transition: all .3s ease-in-out;
+   display: flex;
+   flex-direction: column;
+   gap: .2rem;
+}
+
+.line-1, .line-2, .line-3 {
+	height: .18rem;
+	width: 1.375rem;
+	background-color: #FFFFFF;
+}
+
+.menu-drop{
+	transform: translateY(calc(-100% - 10rem));
+	position: fixed;
+	top: 5.01875rem;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(61,61,61,0.98);
+	transition: all 5s ease-in-out;
+	z-index: 1;
+}
+
+.menu-content {
+	max-width: 67.5rem;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-direction: row;
+	padding-top: 11rem;
+	width: calc(100vw - 3.75rem); /* 40px is the combined padding (20px on each side) */
+	transition: all .3s ease-in-out;
+	
+}
+
+.column-1 a, .column-2 h4, .column-2 h5, .column-2 a,
+
+ .column-3 h4, .column-3 h5, .column-3 a,
+
+ .column-4 h4, .column-4 h5, .column-4 a
+
+
+{
+	color: #fff;
+    font-size: 1.5rem;
+	font-weight: 900;
+	font-style: italic;
+    transition: all .15s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	margin-block-end: 2.5rem;
+}
+
+/* HOVER EFFECT */
+
+.menu-content a:hover {
+	color: #ffdd00;
+	transition: all .3s ease-in-out;
+}
+
+.column-1 .home {
+	font-size: 2rem;
+	color: #ffdd00;
+}
+
+.Contact-us {
+	padding-block-end: 2.5rem;
+	border-bottom: 3px solid #ffdd00;
+}
+
+.column-2 h4,.column-3 h4,.column-4 h4{
+	font-size:1.3rem;
+	margin: 0;
+	margin-bottom: 1rem ;
+	padding-bottom: 0.625rem;
+}
+
+.column-2 h5, .column-3 h5, .column-4 h5{
+	font-size:1rem;
+	margin: 0;
+	padding-bottom: 0.625rem;
+}
+
+.day-trail-container, .find-out-more-container,.learn-more-container {
+	display: flex;
+	align-items: center;
+	gap: 0.3125rem;
+}
+
+.day-trail-container a, .find-out-more-container a, .learn-more-container a {
+	font-size: 0.9375rem ;
+	margin: 0;
+}
+
+.arrow-right-icon {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(101%); 
+}
+
+
+.hero-background-video {
+    width: 100%; 
+    /* height: 3302.250px;  */
+	height: 3668.53px;
+    object-fit:cover;
+    z-index: -5;
+    position: absolute;
+    top: 0;
+}
+
+.right-container2 {
+    display: none;
+}
+
+
+@media only screen and (max-width: 980px){
+    .background-slide {
+        display: none;
+    }
+
+	.header-content {
+		padding-top: 0.625rem;		
+	}
+
+	.background-slide-2 {
+		display: flex ;
+		height: 75px;
+	}
+    .right-container {
+        display: none; 
+    }
+	.logo {
+		width: 12.5rem;
+		height: 3.75rem;
+		z-index: 2;
+		transition: all .3s ease-in-out;
+	}
+
+    .right-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gym-icon {
+        width: 1.875rem;
+        height:  1.875rem;
+        filter: invert(40%) sepia(98%) saturate(1007%) hue-rotate(171deg) brightness(97%) contrast(101%);
+    }
+
+	.menu-drop{
+		display: none;
+	}
+
+}
+
+
+
+/* HERO SECTION */
+/* ********************************************************************* */
+
+.hero {
+	max-width: 1080px;
+	margin-top: 180px;
+	display: flex;
+	flex-direction: column;
+	margin-inline: auto;
+	width: calc(100vw - 3.75rem);
+}
+
+.hero-heading {
+	font-size: 75px;
+	font-style: italic;
+	font-weight: 900;
+	color: #FFFFFF;
+	text-shadow: 0.03em 0.03em 0em #000000;
+	line-height: 1.1em;
+	margin-bottom: 2rem;
+}
+
+.hero h2 {
+	font-size: 26px;
+	font-style: italic;
+	color: #ffffff;
+    filter: drop-shadow(2px 2px 0 #000);
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+	z-index: -1;
+}
+
+.top-corner-container {
+	border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(90deg, #ffdd00 0%, #f48120 100%);
+	background-color: #ffffff;
+	transform: translateX(-110px) translateY(-222px) rotateX(0deg) rotateY(0deg) rotateZ(-20deg);
+	height: 19.25rem;
+	width: 65%;
+    max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;	
+}
+
+.chat {
+	position: fixed;
+	bottom: 2rem;
+	left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: .7rem;
+	z-index: 5;
+	
+}
+
+.webchat-toggle {
+	width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 0.5rem;
+    background-color: #008fd5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	
+}
+
+.webchat-toggle img {
+	width: 1.875rem;
+    height: 1.875rem;
+}
+
+
+.join-chat {
+	width: 3.75rem;
+	height: 3.75rem;
+	background: #25d366;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+	
+}
+
+.join-chat:hover {
+	background: #128c7e;
+}
+
+.join-chat img {
+	width: 65%;
+	height: 65%;
+	object-fit: cover;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+	.top-corner-container {
+		transform: translateX(-110px) translateY(-230px) rotateX(0deg) rotateY(0deg) rotateZ(-25deg);
+		height: 17.25rem;
+	}
+
+}
+
+@media only screen and (max-width: 980px){
+	.top-corner-container {
+		display: none;
+	}
+}
+
+
+/* SIDE MENU */
+/* *********************************************************************** */
+
+.side-menu {
+	display: flex;
+	position: fixed;
+	width: 40vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(100%);
+}
+
+.slider {
+	position: absolute;
+	left: -52px ;
+	z-index: 8;
+	height: auto;
+	display: flex;
+	align-items: center;
+}
+
+.slider-image {
+	width: 100%;
+	height: 80%; 
+	object-fit: cover;
+}
+
+.sider-closed-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+  	right: 0;
+	margin-right: 1rem;
+}
+
+.sider-closed-content img {
+	margin-bottom: 1.875rem;
+}
+
+.location-icon{
+	width: 14px;
+	height: 19px;
+}
+
+.trainer-finder-icon{
+	width: 20px;
+	height: 20px;
+}
+
+.calender-icon{
+	width: 20px;
+	height: 23px;
+}
+
+.mail-icon{
+	width: 18px;
+	height: 13px;
+}
+
+.sider-main-content {
+	z-index: 9;
+	position: relative;
+	background-color: #3d3d3d;
+	height: 100%;
+	width: 90%;
+	padding-inline: 6.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sider-main-content h2 {
+	color: #fff;
+    font-size: 30px;
+	margin-bottom: 2.5rem;
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+	border: none;
+	border-width: 3px;
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%); 
+	border-image-slice: 1;
+	border-bottom: 3px solid transparent;
+
+}
+
+.sider-main-content h3 {
+	color: #fff;
+    font-size: 22px;
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+	cursor: pointer;
+}
+
+.sider-main-content p {
+	color: #fff;
+    font-size: 0.9375rem;
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.club-finder,.trainer-finder,
+.class-finder, .news-container {
+	gap: 20px;
+	display: flex;
+	height: 6.0625rem;
+	align-items: start;
+}
+
+.club-finder img {
+	width: 27px;
+	height: 35px;
+}
+
+.trainer-finder img {
+	width: 30px;
+	height: 30px;
+}
+
+.class-finder img {
+	width: 27px;
+	height: 31px;
+}
+
+.news-container img {
+	width: 27px;
+	height: 20px;
+}
+
+.side-menu-2 {
+	display: none;
+	position: fixed;
+	align-items: center;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+
+@media only screen and (max-width: 1499px ) {
+
+	.sider-main-content {
+		padding-inline-end: 6.25rem;
+		padding-inline-start: 3.125rem;
+	}
+}
+
+@media only screen and (max-width: 980px ) {
+
+	.side-menu {
+		display: none;
+	}
+
+	.side-menu-2 {
+		display: flex;
+	}
+	
+}
+
+
+/* Divider Line */
+/* ***************************************************************** */
+
+.divider-line{
+	background-color: #0C2963;
+    bottom: 0px;
+	height: 1.25rem;
+	width: 100%;
+	margin-top: 3300.53px;
+	position: relative;
+	
+}
+
+@media only screen and (max-width: 516px ) {
+.divider-line{
+	margin-top: 3218.53px;
+}
+}
+
+@media only screen and (max-width: 370px ) {
+.divider-line{
+	margin-top: 3136.53px;
+}
+}
+
+/* rectangle-background */
+/* *****************************************************/
+
+.rectangle-background{
+	height: 550px;
+    position: absolute;
+    bottom: -200%;
+    transform: translateX(-600px) translateY(290px) rotateX(0deg) rotateY(0deg) rotateZ(25deg);
+	z-index: -1;
+	display: flex;
+	border-width: 5px;
+	border-style: solid;
+	border-image: linear-gradient(90deg, #ffdd00 0%, #f48120 100%);
+	border-image-slice: 1;
+	border-top: 5px solid transparent;
+}
+
+.rectangle-background-img {
+	bottom: 100%;
+}
+
+
+/* SECTION - 1 */
+/* *****************************************************/
+
+.section-1 {
+	background: url('images/section-1/gym-img-1.jpg');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+.section-content-2 {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 150px;
+	background-color: rgba(0,0,0,.65);
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%);
+	border-image-slice: 1;
+	border-width: 5px;
+	border-left: 5px solid transparent;
+}
+
+.about-planetfitness, .three-brands, .we-keep-it {
+	display: flex;
+    justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.about-planetfitness h2, .three-brands h2, .we-keep-it h2 {
+	color: #fff;
+    font-size: 3.125rem;
+    padding: 0;
+	font-style: italic;
+}
+
+/* DROP CONTENT */
+
+.about-planetfitness-drop-content, .three-brands-drop-content
+, .we-keep-it-drop-content {
+	color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    padding-inline: 30px;
+	border-top: 10px solid #fff;
+    transition:  all 0.2s ease-in-out;
+	max-height: 311px;
+	max-height: 0;
+	opacity: 0;
+}
+
+.about-planetfitness-drop-content p, .three-brands-drop-content p, .we-keep-it-drop-content p {
+    padding-top: 30px;
+    padding-bottom: 65px;
+    position: relative;
+	border-bottom: 2px solid #fff;
+}
+
+
+.about-planetfitness-drop-content span, .three-brands-drop-content span, .we-keep-it-drop-content span {
+	display: flex;
+	height: 35px ;
+}
+
+/* SECTION - 1 | SMALLER SCREEN*/
+/* *****************************************************/
+
+.section-1-small-container {
+	display: flex;
+	background: url('images/section-1/gym-img-2.jpg');
+	height: 364px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+    grid-template-columns: 30% 70%;
+	display: none;
+}
+
+.section-1-small-container,.section-1-small-container-2,.section-1-small-container-3 {
+	grid-template-columns: 20% 80%;
+}
+
+.section-1-small-container-2 {
+	display: flex;
+	background: url('images/section-1/gym-img-3.jpg');
+	height: 364px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+    grid-template-columns: 70% 30% ;
+	display: none;
+}
+
+.section-1-small-container-3 {
+	display: flex;
+	background: url('images/section-1/gym-img-4.jpg');
+	height: 364px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+    grid-template-columns: 30% 70%;
+	display: none;
+}
+
+.about-planetfitness-small  {
+	padding-inline: 80px;
+	padding-block: 100px;
+	background-color: rgba(0,0,0,.65);
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%);
+	border-image-slice: 1;
+	border-width: 3px;
+	border-left: 3px solid transparent;
+}
+
+.about-planetfitness-small-2  {
+	padding-inline: 80px;
+	padding-block: 100px;
+	background-color: rgba(0,0,0,.65);
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%);
+	border-image-slice: 1;
+	border-width: 3px;
+	border-right: 3px solid transparent;
+}
+
+.about-planetfitness-small h2, .about-planetfitness-small-2 h2 {
+	color: #fff;
+    font-size: 32px;
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+	font-style: italic;
+}
+
+.about-planetfitness-small p, .about-planetfitness-small-2 p{
+    color: #fff;
+    padding-top: 20px;
+	font-size: 15px;
+	line-height: 1.5rem;
+	font-weight: lighter;
+}
+
+
+
+/* SECTION - 2 */
+/* *****************************************************/
+
+.section-2 {
+	background: url('images/section-2/gym-img-1.jpg');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.section-content-1-section-2-left {
+	background-color: rgba(0,0,0,.65);
+	padding-left: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.section-content-2-section-2-right {
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%);
+	border-image-slice: 1;
+	border-width: 5px;
+	border-left: 5px solid transparent;
+}
+
+.engaging-class,.free-trial,.teens-train-free {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.engaging-class h3,.free-trial h3,.teens-train-free h3 {
+	font-size: 40px;
+    font-style: italic;
+	color: #fff;
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.engaging-class img,.free-trial img,.teens-train-free img {
+	width: 15px;
+	height: 50px;
+}
+
+#section-2-arrow-2,#section-2-arrow-3 {
+	display: none;
+}
+
+
+.section-content-2-section-2-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.engaging-class-content,.free-trial-content,.teens-train-free-content {
+	width: 33%;
+    background-color: rgba(0,0,0,0.9);
+    padding-inline: 30px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+	border-top: 20px solid #fff;
+	transition: opacity 0.35s ease-out;
+	flex-direction: column;
+}
+.free-trial-content,.teens-train-free-content{
+	display: none;
+}
+
+.engaging-class-content h3,.free-trial-content h3,.teens-train-free-content h3 {
+	padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+	color: #fff;
+    font-size: 40px;
+}
+
+.engaging-class-content p,.free-trial-content p,.teens-train-free-content p {
+	color: #fff;
+    padding-top: 50px;
+	padding-bottom: 105px;
+	border-bottom: 1px solid #fff ;
+}
+
+.teens-train-free-content a, .teens-train-free-smaller a {
+	cursor: pointer;
+    padding: 10px 25px;
+    background: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+	color: #2ea3f2;
+	text-decoration: none;
+}
+
+/* SECTION - 2 | SMALLER SCREEN*/
+/* *****************************************************/
+.section-2-smaller-left-container {
+	background: url('images/section-2/gym-img-1.jpg');
+	height: 310px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+    grid-template-columns: 80% 20% ;
+	display: none;
+}
+
+.engaging-class-smaller,.free-trial-smaller,.teens-train-free-smaller{
+	background-color: rgba(0,0,0,.65);
+	border-image: linear-gradient(89.87deg, #FD0 1.29%, #F48120 99.77%);
+	border-image-slice: 1;
+	border-width: 3px;
+	border-right: 3px solid transparent;
+	padding-inline: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all .3s ease-in-out;
+}
+
+.free-trial-smaller,.teens-train-free-smaller {
+	display: none;
+}
+
+
+.engaging-class-smaller h3,.free-trial-smaller h3,.teens-train-free-smaller h3{
+	font-size: 26px;
+	color: #fff;
+}
+
+.engaging-class-smaller p,.free-trial-smaller p,.teens-train-free-smaller p{
+	font-size: 26px;
+	color: #fff;
+    padding-top: 20px;
+	font-size: 15px;
+	line-height: 1.5rem;
+	font-weight: lighter;
+}
+
+.section-2-smaller-right-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+
+.section-2-smaller-right-container img {
+	filter: brightness(0) saturate(100%) invert(31%) sepia(14%) saturate(1%) hue-rotate(38deg) brightness(95%) contrast(82%);
+	transition: all .3s ease-in-out;
+}
+
+
+.onclick-background {
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #005baa;
+    background-color: #00a0f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-2-smaller-right-container .dumbbell-icon {
+	filter: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.onclick-background-2 {
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.section-2-smaller-right-container .running-man-icon {
+	height: 40px;
+}
+
+.onclick-background-3 {
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+
+@media only screen and (max-width: 854px) {
+
+	.about-planetfitness-small  {
+		padding-inline: 30px;
+		padding-block: 50px;
+		}
+		.about-planetfitness-small-2  {
+		padding-inline: 30px;
+		padding-block: 50px;
+		}
+
+		.about-planetfitness-small h2, .about-planetfitness-small-2 h2 {
+			font-size: 26px;
+			font-weight: bold;
+		   }
+
+}
+
+@media only screen and (max-width: 599px) {
+
+	.section-1-small-container,.section-1-small-container-3 {
+		grid-template-columns: 20% 80%;
+		height: 480px;
+	}
+
+	.section-1-small-container-2 {
+		grid-template-columns: 80% 20% ;
+		height: 480px;
+	}
+
+}
+
+
+/* SECTION 3 */
+/* ****************************************************/
+
+.section-3 {
+	background: url('/assets/images/section-3/eventSliderBackground.jpg');
+	height: 332.703px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-block: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.events {
+	padding-inline: 60px;
+}
+
+.section-3 img {
+	width: 100%;
+	object-fit: contain;
+	
+}
+
+
+/* SECTION1 && SECTION 2, SECTION 3 MEDIA */
+
+@media only screen and (max-width: 1322px) {
+	/* .section-1 {
+		background-size: contain;
+	}
+	.section-2 {
+		background-size: contain;
+	} */
+
+}
+
+@media only screen and (max-width: 980px) {
+	.rectangle-background {
+		display: none;
+	}
+	.section-3 {
+		display: none;
+	}
+	.section-1 {
+		display: none;
+	}
+	.section-2 {
+		display: none;
+	}
+
+	.section-1-small-container,.section-1-small-container-2,.section-1-small-container-3 {
+		display: grid;
+	}
+	.section-2-smaller-left-container {
+		display: grid;
+		}
+
+}
+
+
+
+/* FOOTER */
+/* *****************************************************************************/
+
+.footer {
+	background: linear-gradient(258.87deg, #0C2963 12.26%, #0055AB 99.42%);
+	
+}
+
+.footer-top {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: 1080px;
+	
+	margin-inline: auto;
+	padding-inline: 131px;
+	padding-block: 27px;
+}
+
+.row-1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.column-title {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.club-finder-footer,.trainer-finder-footer,.class-finder-footer,.bank-details-footer, .customer-service-footer {
+	display: flex;
+	margin-bottom: 15px;
+	align-items: start;
+}
+
+.club-finder-content,.trainer-finder-content,.trainer-finder-content,.bank-details-content,.customer-service-content{
+	margin-left: 10px;
+}  
+
+.account-no-content,.branch-content,.branch-code-content,.branch-code-2-content,.reference-no-content{
+	margin-left: 19px;
+}  
+
+.row-1 ,.row-2, .row-3 , .row-4 {
+	margin-right: 59px;
+}
+
+
+.row-1 img, .row-3 img, .row-4 img {
+	width: 9px;
+	height: 13px;
+	margin-top: .2rem;
+}
+
+.location-icon {
+	width: 15px !important; 
+	height: 20px !important; 
+}
+
+.row-1 h4, .row-3 h4, .row-4 h4 {
+    color: #fff;
+    font-size: 24px;
+	margin-left: 10px;
+	font-style: italic;
+}
+
+.row-1 h5,.row-3 h5,.row-4 h5 {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 3px;
+	font-style: italic;
+}
+
+.row-1 p, .row-3 p, .row-4 p{
+    color: #c1c1c1;
+	font-size: 15px;
+}
+
+.row-3 span, .row-4 span{
+    color: #ffffff;
+}
+
+.group-icon-footer {
+	width: 29px!important;
+	height: 20px!important;
+}
+
+.footer-bottom{
+	background-color: #0c2963;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-block-start: 20px;
+	padding-block-end: 70px;
+	padding-inline: 10px;
+}
+
+.footer-bottom h6{
+	color: #fff;
+	line-height: 1em;
+    font-weight: 500;
+}
+
+.footer-bottom a{
+	color: #fff;
+	line-height: 1em;
+    font-weight: 500;
+	text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 1127px) {
+	.row-1 ,.row-2, .row-3 , .row-4 {
+		margin-right: 30px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.footer-top {
+		display: flex;
+		flex-direction: column;
+		padding-inline: 0px;
+		margin-inline-start: 10%;
+		flex-wrap: wrap;
+	}
+	.row-1 ,.row-2, .row-3 , .row-4 {
+		margin-bottom: 30px;
+	}
+}
